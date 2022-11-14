@@ -83,19 +83,32 @@ export default function Header() {
       >
         <chakra.div h="4.5rem" mx="auto" maxW="1200px">
           <Flex w="full" h="full" px="6" align="center" justify="space-between">
-            <Flex align="center">
-              <Link href="/">
-                <HStack>
-                  <Logo width="247px" height="43px" />
-                </HStack>
-              </Link>
+            <Flex justify="space-between"  w="full" h="full" >
+              <Flex align="center">
+                <Link href="/">
+                  <HStack>
+                    <Logo width="247px" height="43px" />
+                  </HStack>
+                </Link>
+              </Flex>
+              <HStack display={{ base: 'none', md: 'flex' }} spacing={5} fontWeight={"bold"} >
+                <Link href="/" color={"woolball.400"}  _hover={{ color: 'woolball.300', textDecoration: "none" }}>
+                  What&apos;s Woolball?
+                </Link>
+                <Link href="/" color={"woolball.400"}  _hover={{ color: 'woolball.300', textDecoration: "none" }}>
+                  
+                    Docs
+                
+                </Link>
+              </HStack>
             </Flex>
+            
 
             <Flex justify="flex-end" w="full" maxW="824px" align="center">
               <HStack spacing="5" display={{ base: 'none', md: 'flex' }}>
                 <SocialIcons />
               </HStack>
-              <IconButton
+              {/* <IconButton
                 size="md"
                 fontSize="lg"
                 aria-label={`Switch to ${text} mode`}
@@ -104,7 +117,7 @@ export default function Header() {
                 ml={{ base: '0', md: '3' }}
                 onClick={toggleMode}
                 icon={<SwitchIcon />}
-              />
+              /> */}
               <ConnectWalletBtn />
               <IconButton
                 display={{ base: 'flex', md: 'none' }}
