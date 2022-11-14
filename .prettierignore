@@ -5,3 +5,5 @@
 **/.next
 **/.vscode
 **/public
+**/out
+**/build

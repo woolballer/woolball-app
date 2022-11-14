@@ -17,7 +17,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import localFont from '@next/font/local'
 
-const AspektaFont = localFont({ src: '../fonts/AspektaVF.woff2' })
+const AspektaFont = localFont({ src: '../public/fonts/AspektaVF.woff2' })
 
 function Roadmap() {
   return (

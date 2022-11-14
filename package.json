@@ -2,10 +2,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export -o build && yarn run replaceFilePaths",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "replaceFilePaths": "node replacer.js"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.11",
@@ -28,6 +29,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
+    "replace-in-file": "^6.3.5",
     "typescript": "^4.8.4"
   }
 }
