@@ -1,22 +1,7 @@
 // pages/_app.js
 import { ChakraProvider } from '@chakra-ui/react'
-import { AppProps } from 'next/app';
-import { extendTheme } from '@chakra-ui/react'
-
-
-
-const theme = extendTheme({
-  styles: {
-    global: {
-      // styles for the `body`
-      body: {
-        bg: '#ffdbba',
-      },
-    },
-  },
-})
-
-
+import { AppProps } from 'next/app'
+import theme from '../theme'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
