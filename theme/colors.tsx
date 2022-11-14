@@ -1,5 +1,4 @@
 export default {
-  // woolball: "#cd2d5d",
 
   woolball: {
     50: '#ffe6f0',

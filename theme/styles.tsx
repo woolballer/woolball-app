@@ -2,7 +2,7 @@ export default {
   global: {
     // styles for the `body`
     body: {
-      bg: '#ffdbba',
+      bg: '#fff8ee',
     },
   },
 }

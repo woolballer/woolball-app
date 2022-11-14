@@ -53,10 +53,10 @@ export default function Home() {
             <Stack flex={1} spacing={{ base: 5, md: 10 }}>
               <Heading
                 lineHeight={1.1}
-                fontWeight={600}
+                fontWeight={700}
                 fontSize={{ base: '5xl', sm: '6xl', lg: '7xl' }}
               >
-                <Text as={'span'} position={'relative'}>
+                <Text as={'span'} position={'relative'} >
                   A name system <br />
                   with link
                 </Text>
@@ -111,10 +111,11 @@ export default function Home() {
               <Image
                 alt={'Hash Logo'}
                 position={'absolute'}
-                left={0}
+                maxW={'none'}
                 align={'center'}
-                w={'883px'}
-                h={'884px'}
+                w={'930px'}
+                h={'930x'}
+                ml={'30px'}
                 src={'/images/giant-hash-sign.png'}
               />
             </Flex>
