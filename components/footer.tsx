@@ -8,6 +8,8 @@ import {
   VisuallyHidden,
   Link,
   Flex,
+  VStack,
+  HStack,
 } from '@chakra-ui/react'
 import SocialIcons from '../components/social_icons'
 import { ReactNode } from 'react'
@@ -72,12 +74,17 @@ export default function Footer() {
           <SocialIcons />
         </Stack>
         <Stack direction={'row'} spacing={2}>
-          <Logo width="184px" height="31px" />
-          <Box h={"100%"} >
-            <Text fontSize={'12px'} color={'black'} >
-                ©2022
-            </Text>
-          </Box>
+          <HStack h={'full'}>
+            <Stack>
+              <Logo width="184px" height="31px" />
+            </Stack>
+            
+            <VStack  h={"100%"} alignSelf="stretch">
+              <Text fontSize={'12px'} color={'black'} >
+                  ©2022
+              </Text>
+            </VStack >
+          </HStack>
         </Stack>
       </Container>
     </Box>

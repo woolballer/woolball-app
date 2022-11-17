@@ -91,7 +91,7 @@ export default function Header() {
                   </HStack>
                 </Link>
               </Flex>
-              <HStack display={{ base: 'none', md: 'flex' }} spacing={5} fontWeight={"bold"} >
+              <HStack display={{ base: 'none', md: 'flex' }} spacing={6} fontWeight={"bold"} >
                 <Link href="/" color={"woolball.400"}  _hover={{ color: 'woolball.300', textDecoration: "none" }}>
                   What&apos;s Woolball?
                 </Link>
@@ -108,16 +108,7 @@ export default function Header() {
               <HStack spacing="5" display={{ base: 'none', md: 'flex' }}>
                 <SocialIcons />
               </HStack>
-              {/* <IconButton
-                size="md"
-                fontSize="lg"
-                aria-label={`Switch to ${text} mode`}
-                variant="ghost"
-                color="current"
-                ml={{ base: '0', md: '3' }}
-                onClick={toggleMode}
-                icon={<SwitchIcon />}
-              /> */}
+             
              
               <IconButton
                 display={{ base: 'flex', md: 'none' }}

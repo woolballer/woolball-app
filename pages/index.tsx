@@ -51,7 +51,7 @@ export default function Home() {
                   with links
                 </Text>
               </Heading>
-              <Text color={'black'} fontSize={'22px'} lineHeight={'32px'} paddingRight={3}>
+              <Text color={'black'} fontSize={'22px'} lineHeight={'32px'} paddingRight={16}>
                 Woolball is a Name System where names can link to each other.
                 Woolball is an extension to the subdomain system, everything you
                 can do with subdomains, you can do with links.
