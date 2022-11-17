@@ -118,7 +118,7 @@ export default function Header() {
                 onClick={toggleMode}
                 icon={<SwitchIcon />}
               /> */}
-              <ConnectWalletBtn />
+             
               <IconButton
                 display={{ base: 'flex', md: 'none' }}
                 aria-label="Open menu"

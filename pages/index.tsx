@@ -12,26 +12,16 @@ import {
   SimpleGrid,
   useColorModeValue,
   Link,
+  VStack,
 } from '@chakra-ui/react'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import localFont from '@next/font/local'
+import GiantLogo from '../components/landing_page/giant_logo'
+import Roadmap from '../components/landing_page/road_map'
 
 const AspektaFont = localFont({ src: '../public/fonts/AspektaVF.woff2' })
 
-function Roadmap() {
-  return (
-    <Flex my={28} w={'100%'} h={'100%'}>
-      <Image
-        alt={'Road Map'}
-        w={'100%'}
-        h={'100%'}
-        src={'/images/roadmap.png'}
-       
-      />
-    </Flex>
-  )
-}
 
 export default function Home() {
   return (
@@ -56,16 +46,33 @@ export default function Home() {
                 fontWeight={700}
                 fontSize={{ base: '5xl', sm: '6xl', lg: '7xl' }}
               >
-                <Text as={'span'} position={'relative'} >
+                <Text fontSize={'80px'} lineHeight={'80px'} as={'span'} position={'relative'} fontStyle={"italic"} >
                   A name system <br />
-                  with link
+                  with links
                 </Text>
               </Heading>
-              <Text color={'black'} fontSize={'48px'} lineHeight={'56px'}>
+              <Text color={'black'} fontSize={'22px'} lineHeight={'32px'} paddingRight={3}>
                 Woolball is a Name System where names can link to each other.
                 Woolball is an extension to the subdomain system, everything you
                 can do with subdomains, you can do with links.
               </Text>
+              <SimpleGrid columns={3} spacing={10} color={'black'} fontSize={'22px'} lineHeight={'32px'} fontWeight={'400'}>
+                <VStack>
+                  <Image src={'/images/checkmark.png'} alt={'Checkmark'} />
+                  <Text >Structured DAOs</Text>
+                  
+                </VStack>
+                <VStack>
+                  <Image src={'/images/checkmark.png'} alt={'Checkmark'} />
+                  <Text >Web3 accounts</Text>
+                  
+                </VStack>
+                <VStack>
+                  <Image src={'/images/checkmark.png'} alt={'Checkmark'} />
+                  <Text >Reputation score for names</Text>
+                  
+                </VStack>
+              </SimpleGrid>
               <Flex
                 flex={1}
                 justify={'center'}
@@ -78,8 +85,8 @@ export default function Home() {
                   fontWeight={'bold'}
                   px={6}
                   colorScheme={'red'}
-                  bg={'green.300'}
-                  _hover={{ bg: 'green.400' }}
+                  bg={'woolball.400'}
+                  _hover={{ bg: 'woolball.500' }}
                   mx={{ base: 0, sm: 8 }}
                 >
                   JOIN PRESALE
@@ -87,42 +94,22 @@ export default function Home() {
                 <Button
                   rounded={'full'}
                   size={'lg'}
+                  bg={'transparent'}
+                  color={'woolball.300'}
                   fontWeight={'bold'}
                   px={6}
                   mx={{ base: 0, sm: 8 }}
+                  border='1px' borderColor='woolball.300'
                 >
                   JOIN DISCORD
                 </Button>
               </Flex>
             </Stack>
-            <Flex
-              flex={1}
-              justify={'center'}
-              align={'center'}
-              position={'relative'}
-            >
-              <HashBg
-                position={'absolute'}
-                left={0}
-                zIndex={-1}
-                color={useColorModeValue('red.50', 'red.400')}
-              />
-
-              <Image
-                alt={'Hash Logo'}
-                position={'absolute'}
-                maxW={'none'}
-                align={'center'}
-                w={'930px'}
-                h={'930x'}
-                ml={'30px'}
-                src={'/images/giant-hash-sign.png'}
-              />
-            </Flex>
+            <GiantLogo />
           </Stack>
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={20} my={20}>
             <Flex>
-              <Text color={'black'} fontSize={'32px'} lineHeight={'40px'}>
+              <Text color={'black'} fontSize={'40px'} lineHeight={'48px'}>
                 We introduce Woolball, a flat name system that uses links
                 between names instead of subdomains.
               </Text>
@@ -170,14 +157,3 @@ export default function Home() {
   )
 }
 
-export const HashBg = (props: any) => {
-  return (
-    <chakra.div
-      width={'633px'}
-      height={'684px'}
-      rounded={'3xl'}
-      bg={'#FFAB48'}
-      {...props}
-    />
-  )
-}
