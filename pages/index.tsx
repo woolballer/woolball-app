@@ -27,12 +27,12 @@ export default function Home() {
       >
         <Stack
           flex={0.5}
-          spacing={{ base: 10, md: 10 }}
+          spacing={{ base: 6, lg: 10 }}
           // marginBottom={{ base: 20, md: 10 }}
           minH={{
             base: 'calc(100vh - 96px)',
             sm: 'calc(100vh - 104px)',
-            md: 'calc(100vh - 136px)',
+            md: 'calc(100vh - 142px)',
             lg: 'calc(100vh - 168px)',
             xl: 'calc(100vh - 184px)',
           }}
@@ -43,8 +43,8 @@ export default function Home() {
             fontSize={{ base: '5xl', sm: '6xl', lg: '7xl' }}
           >
             <Text
-              fontSize={{ base: '32px', sm: '80px' }}
-              lineHeight={{ base: '40px', sm: '80px' }}
+              fontSize={{ base: '32px', sm: '48px', lg: '80px' }}
+              lineHeight={{ base: '40px', sm: '56px', lg: '80px' }}
               as={'span'}
               position={'relative'}
             >
@@ -53,8 +53,8 @@ export default function Home() {
           </Heading>
           <Text
             color={'black'}
-            fontSize={{ base: '16px', md: '22px' }}
-            lineHeight={{ base: '24px', md: '32px' }}
+            fontSize={{ base: '16px', md: '18px', lg: '22px' }}
+            lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
             paddingRight={{ base: 0, md: 16 }}
           >
             Woolball is a Name System where names can link to each other.
@@ -62,11 +62,11 @@ export default function Home() {
             do with subdomains, you can do with links.
           </Text>
           <SimpleGrid
-            columns={{ base: 1, md: 3 }}
-            spacing={{ base: 2, sm: 3, md: 4, lg: 8 }}
+            columns={{ base: 1, lg: 3 }}
+            spacing={{ base: 2, lg: 8 }}
             color={'black'}
-            fontSize={{ base: '16px', sm: '20px', md: '22px' }}
-            lineHeight={'32px'}
+            fontSize={{ base: '16px', sm: '18px', lg: '22px' }}
+            lineHeight={{ base: '24px', sm: '26px', lg: '32px' }}
             fontWeight={'400'}
             verticalAlign={'middle'}
           >
@@ -80,7 +80,7 @@ export default function Home() {
           minH={{
             base: 'calc(100vh - 96px)',
             sm: 'calc(100vh - 104px)',
-            md: 'calc(100vh - 136px)',
+            md: 'calc(100vh - 142px)',
             lg: 'calc(100vh - 168px)',
             xl: 'calc(100vh - 184px)',
           }}
@@ -94,8 +94,8 @@ export default function Home() {
         <Flex>
           <Text
             color={'black'}
-            fontSize={{ base: '24px', md: '40px' }}
-            lineHeight={{ base: '32px', md: '48px' }}
+            fontSize={{ base: '24px', md: '32px', lg: '40px' }}
+            lineHeight={{ base: '32px', md: '40px', lg: '48px' }}
           >
             We introduce Woolball, a flat name system that uses links between
             names instead of subdomains.

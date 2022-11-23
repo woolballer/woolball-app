@@ -14,7 +14,7 @@ export function CheckmarkIcon() {
 
 export default function UseCase({ children }: { children: React.ReactNode }) {
   return (
-    <Stack direction={{ base: 'row', md: 'column' }}>
+    <Stack direction={{ base: 'row', lg: 'column' }}>
       <CheckmarkIcon />
       <Flex flexDirection={'row'} alignItems={'center'}>
         <Text>{children}</Text>

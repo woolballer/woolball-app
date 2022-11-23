@@ -22,15 +22,10 @@ import SocialIcons from '../social_icons'
 export default function Header() {
   const mobileNav = useDisclosure()
 
-  const { toggleColorMode: toggleMode } = useColorMode()
   const text = useColorModeValue('dark', 'light')
-  const SwitchIcon = useColorModeValue(FaMoon, FaSun)
 
   const bg = 'white'
   const bgMobileNavBar = 'woolball.50'
-  const ref = React.useRef<HTMLDivElement | null>(null)
-  const [y, setY] = React.useState(0)
-  const height = ref.current ? ref.current.getBoundingClientRect() : 0
 
   const MobileNavContent = (
     <VStack
@@ -105,8 +100,8 @@ export default function Header() {
         px={{ base: 4, xl: 0 }}
       >
         <chakra.div h="4.5rem" mx="auto" w="full" maxW={'7xl'}>
-          <Flex w="full" h="full" justify="space-between" align={'center'}>
-            <Flex justify="space-between" w="full" h="full">
+          <Flex w="full" h="full" justify={'space-evenly'}>
+            <Flex w="full" h="full">
               <Flex align="center">
                 <Link href="/">
                   <HStack>
@@ -114,28 +109,31 @@ export default function Header() {
                   </HStack>
                 </Link>
               </Flex>
-              <HStack
-                display={{ base: 'none', md: 'flex' }}
-                ml={{ md: 8, lg: 0 }}
-                fontWeight={'bold'}
-                spacing={{ md: 4, lg: 8 }}
-              >
-                <Link
-                  href="/what-is-woolball"
-                  color={'woolball.400'}
-                  _hover={{ color: 'woolball.300', textDecoration: 'none' }}
-                >
-                  What&apos;s Woolball?
-                </Link>
-                <Link
-                  href="/"
-                  color={'woolball.400'}
-                  _hover={{ color: 'woolball.300', textDecoration: 'none' }}
-                >
-                  Docs
-                </Link>
-              </HStack>
             </Flex>
+            <Spacer />
+            <HStack
+              display={{ base: 'none', md: 'flex' }}
+              // ml={{ md: 8, lg: 0 }}
+              fontWeight={'bold'}
+              spacing={{ base: 3, lg: 8 }}
+              w="full"
+              justify={{ base: 'center', lg: 'left' }}
+            >
+              <Link
+                href="/what-is-woolball"
+                color={'woolball.400'}
+                _hover={{ color: 'woolball.300', textDecoration: 'none' }}
+              >
+                What&apos;s Woolball?
+              </Link>
+              <Link
+                href="/"
+                color={'woolball.400'}
+                _hover={{ color: 'woolball.300', textDecoration: 'none' }}
+              >
+                Docs
+              </Link>
+            </HStack>
             <Spacer />
             <Flex justify="flex-end" w="full" maxW="824px">
               <HStack spacing="5" display={{ base: 'none', md: 'flex' }}>
