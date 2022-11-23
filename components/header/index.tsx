@@ -100,7 +100,7 @@ export default function Header() {
         px={{ base: 4, xl: 0 }}
       >
         <chakra.div h="4.5rem" mx="auto" w="full" maxW={'7xl'}>
-          <Flex w="full" h="full" justify={'space-evenly'}>
+          <Flex w="full" h="full" justify={'space-evenly'} align={'center'}>
             <Flex w="full" h="full">
               <Flex align="center">
                 <Link href="/">
