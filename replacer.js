@@ -1,15 +1,15 @@
-const replace = require("replace-in-file");
+const replace = require('replace-in-file')
 const options = {
   //you may need to modify the file address to suite your project
-  files: "./build/index.html",
+  files: './build/index.html',
   from: [/src="\//g, /href="\//g],
   to: ['src="', 'href="'],
-};
-(async function () {
+}
+;(async function () {
   try {
-    const results = await replace(options);
-    console.log("Replacement results:", results);
+    const results = await replace(options)
+    console.log('Replacement results:', results)
   } catch (error) {
-    console.error("Error occurred:", error);
+    console.error('Error occurred:', error)
   }
-})();
+})()

@@ -1,5 +1,4 @@
 export default {
-
   woolballRed: {
     50: '#ffe6f0',
     100: '#f6becf',
@@ -12,8 +11,8 @@ export default {
     800: '#420a1c',
     900: '#1d0009',
   },
-  
-  woolball:{
+
+  woolball: {
     50: '#ffeedd',
     100: '#fed2b3',
     200: '#f8b587',
@@ -24,5 +23,5 @@ export default {
     700: '#773506',
     800: '#491f00',
     900: '#1f0800',
-  }
+  },
 }
