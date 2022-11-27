@@ -1,5 +1,13 @@
 import Layout from '../components/layout'
-import { Flex, Heading, Stack, Text, Image, SimpleGrid } from '@chakra-ui/react'
+import {
+  Flex,
+  Heading,
+  Stack,
+  Text,
+  Image,
+  SimpleGrid,
+  Show,
+} from '@chakra-ui/react'
 import UseCase from '../components/landing_page/use_case'
 
 export default function WhatsWoolball() {
@@ -36,17 +44,25 @@ export default function WhatsWoolball() {
           We introduce Woolball, a flat name system that uses links between
           names instead of subdomains.
         </Text>
-
-        <Image
-          align={'start'}
-          w={'1633px'}
-          h={'974x'}
-          top={0}
-          zIndex={100}
-          src={'/images/what-is-woolball-bg.png'}
-          alt={'what is woolball'}
-        />
-
+        <Show above={'lg'}>
+          <Flex
+            justify={'center'}
+            align={'start'}
+            position={'relative'}
+            h={'700px'}
+          >
+            <Image
+              align={'start'}
+              maxWidth={'max-content'}
+              position={'absolute'}
+              bottom={0}
+              left={0}
+              zIndex={-1}
+              src={'/images/what-is-woolball-bg.png'}
+              alt={'what is woolball logo'}
+            />
+          </Flex>
+        </Show>
         <Text
           fontSize={{ base: '14px', sm: '18px' }}
           lineHeight={{ base: '22px', sm: '28px' }}

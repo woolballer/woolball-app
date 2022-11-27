@@ -3,6 +3,7 @@ export default {
     // styles for the `body`
     body: {
       bg: '#ffffff',
+      overflowX: 'hidden',
     },
   },
 }
