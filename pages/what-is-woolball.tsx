@@ -29,8 +29,8 @@ export default function WhatsWoolball() {
           fontSize={{ base: '5xl', sm: '6xl', lg: '7xl' }}
         >
           <Text
-            fontSize={{ base: '32px', sm: '80px' }}
-            lineHeight={{ base: '40px', sm: '80px' }}
+            fontSize={{ base: '32px', sm: '48px', lg: '80px' }}
+            lineHeight={{ base: '40px', sm: '56px', lg: '80px' }}
             as={'span'}
             position={'relative'}
           >
@@ -38,8 +38,8 @@ export default function WhatsWoolball() {
           </Text>
         </Heading>
         <Text
-          fontSize={{ base: '16px', sm: '30px', md: '40px' }}
-          lineHeight={{ base: '24px', sm: '48px' }}
+          fontSize={{ base: '16px', sm: '24px', md: '32px', lg: '40px' }}
+          lineHeight={{ base: '24px', sm: '30px', md: '40px', lg: '48px' }}
         >
           We introduce Woolball, a flat name system that uses links between
           names instead of subdomains.
@@ -104,7 +104,7 @@ export default function WhatsWoolball() {
         </Text>
         <SimpleGrid
           columns={{ base: 1 }}
-          spacing={{ base: 2, lg: 8 }}
+          spacing={{ base: 2, md: 4, lg: 6 }}
           color={'black'}
           fontSize={{ base: '16px', sm: '18px', lg: '22px' }}
           lineHeight={{ base: '24px', sm: '26px', lg: '32px' }}
