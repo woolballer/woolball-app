@@ -3,7 +3,7 @@ import { Flex, Image, Show } from '@chakra-ui/react'
 export default function Roadmap() {
   return (
     <Flex my={28} w={'100%'} h={'100%'}>
-      <Show above={'md'}>
+      <Show above={'lg'}>
         <Image
           alt={'Road Map'}
           w={'100%'}

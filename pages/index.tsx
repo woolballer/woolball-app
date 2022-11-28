@@ -13,6 +13,7 @@ import ActionButtons from '../components/landing_page/action_buttons'
 import ArrowIcon from '../components/svgs/arrow'
 import UseCase from '../components/landing_page/use_case'
 import Layout from '../components/layout'
+import NextLink from 'next/link'
 
 export default function Home() {
   return (
@@ -102,23 +103,24 @@ export default function Home() {
           </Text>
         </Flex>
         <Flex w={'100%'} align={'center'} flex={1} justify={'center'}>
-          <Link
-            aria-label="Woolball Twitter"
-            href="/what-is-woolball"
-            p="1"
-            color={'woolball.400'}
-            _hover={{
-              color: 'woolball.300',
-              borderColor: 'woolball.400',
-              bg: 'woolball.50',
-            }}
-          >
-            <HStack>
-              <Text fontSize={'16px'}>read whole article about woolball</Text>
+          <NextLink href="/what-is-woolball" legacyBehavior passHref>
+            <Link
+              aria-label="Woolball Twitter"
+              p="1"
+              color={'woolball.400'}
+              _hover={{
+                color: 'woolball.300',
+                borderColor: 'woolball.400',
+                bg: 'woolball.50',
+              }}
+            >
+              <HStack>
+                <Text fontSize={'16px'}>read whole article about woolball</Text>
 
-              <ArrowIcon />
-            </HStack>
-          </Link>
+                <ArrowIcon />
+              </HStack>
+            </Link>
+          </NextLink>
         </Flex>
       </SimpleGrid>
       <Roadmap />

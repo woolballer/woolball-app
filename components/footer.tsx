@@ -7,8 +7,10 @@ import {
   Link,
   HStack,
   Flex,
+  Heading,
 } from '@chakra-ui/react'
 import SocialIcons from '../components/social_icons'
+import NextLink from 'next/link'
 
 import LogoReverse from './svgs/logo_reverse'
 
@@ -35,13 +37,14 @@ export default function Footer() {
           spacing={5}
           fontWeight={'bold'}
         >
-          <Link
-            href="/what-is-woolball"
-            color={'woolball.400'}
-            _hover={{ color: 'woolball.300', textDecoration: 'none' }}
-          >
-            What&apos;s Woolball?
-          </Link>
+          <NextLink href="/what-is-woolball" legacyBehavior passHref>
+            <Link
+              color={'woolball.400'}
+              _hover={{ color: 'woolball.300', textDecoration: 'none' }}
+            >
+              What&apos;s Woolball?
+            </Link>
+          </NextLink>
           <Link
             href="/"
             color={'woolball.400'}

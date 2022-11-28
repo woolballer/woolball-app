@@ -13,8 +13,10 @@ import {
   useColorModeValue,
   useDisclosure,
   Spacer,
+  Heading,
 } from '@chakra-ui/react'
 import { FaMoon, FaSun } from 'react-icons/fa'
+import NextLink from 'next/link'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Logo from '../svgs/logo'
 import SocialIcons from '../social_icons'
@@ -55,13 +57,14 @@ export default function Header() {
           bg: 'woolball.100',
         }}
       >
-        <Link
-          href="/what-is-woolball"
-          color={'woolball.400'}
-          _hover={{ color: 'woolball.300', textDecoration: 'none' }}
-        >
-          What&apos;s Woolball?
-        </Link>
+        <NextLink href="/what-is-woolball" legacyBehavior passHref>
+          <Link
+            color={'woolball.400'}
+            _hover={{ color: 'woolball.300', textDecoration: 'none' }}
+          >
+            <Heading>What&apos;s Woolball?</Heading>
+          </Link>
+        </NextLink>
       </Button>
       <Button
         w="full"
@@ -103,11 +106,13 @@ export default function Header() {
           <Flex w="full" h="full" justify={'space-evenly'} align={'center'}>
             <Flex w="full" h="full">
               <Flex align="center">
-                <Link href="/">
-                  <HStack>
-                    <Logo width="247px" height="43px" />
-                  </HStack>
-                </Link>
+                <NextLink href="/" legacyBehavior passHref>
+                  <Link>
+                    <HStack>
+                      <Logo width="247px" height="43px" />
+                    </HStack>
+                  </Link>
+                </NextLink>
               </Flex>
             </Flex>
             <Spacer />
@@ -119,13 +124,14 @@ export default function Header() {
               w="full"
               justify={{ base: 'center', lg: 'left' }}
             >
-              <Link
-                href="/what-is-woolball"
-                color={'woolball.400'}
-                _hover={{ color: 'woolball.300', textDecoration: 'none' }}
-              >
-                What&apos;s Woolball?
-              </Link>
+              <NextLink href="/what-is-woolball" legacyBehavior passHref>
+                <Link
+                  color={'woolball.400'}
+                  _hover={{ color: 'woolball.300', textDecoration: 'none' }}
+                >
+                  What&apos;s Woolball?
+                </Link>
+              </NextLink>
               <Link
                 href="/"
                 color={'woolball.400'}
