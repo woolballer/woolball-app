@@ -1,10 +1,10 @@
-import { Icon, Link } from '@chakra-ui/react'
+import { Icon, Link, Wrap } from '@chakra-ui/react'
 import { FaDiscord } from 'react-icons/fa'
 import { AiFillGithub, AiOutlineTwitter } from 'react-icons/ai'
 
-export default function SocialIcons() {
+export default function SocialIcons(props: any) {
   return (
-    <>
+    <Wrap {...props}>
       <Link
         isExternal
         aria-label="Woolball Twitter"
@@ -71,6 +71,6 @@ export default function SocialIcons() {
           h="5"
         />
       </Link>
-    </>
+    </Wrap>
   )
 }
