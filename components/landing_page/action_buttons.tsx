@@ -8,18 +8,20 @@ export default function ActionButtons() {
       w={'100%'}
       direction={'row'}
     >
-      <Button
-        rounded={'full'}
-        size={'lg'}
-        fontWeight={'bold'}
-        colorScheme={'red'}
-        bg={'woolball.400'}
-        _hover={{ bg: 'woolball.500' }}
-        px={{ base: 6, md: 16, sm: 8 }}
-        shadow={'sm'}
-      >
-        JOIN PRESALE
-      </Button>
+      {process.env.SHOW_PRESALE_BTN === '1' && (
+        <Button
+          rounded={'full'}
+          size={'lg'}
+          fontWeight={'bold'}
+          colorScheme={'red'}
+          bg={'woolball.400'}
+          _hover={{ bg: 'woolball.500' }}
+          px={{ base: 6, md: 16, sm: 8 }}
+          shadow={'sm'}
+        >
+          JOIN PRESALE
+        </Button>
+      )}
       <Button
         rounded={'full'}
         size={'lg'}
