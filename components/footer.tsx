@@ -45,13 +45,15 @@ export default function Footer() {
               What&apos;s Woolball?
             </Link>
           </NextLink>
-          <Link
-            href="/"
-            color={'woolball.400'}
-            _hover={{ color: 'woolball.300', textDecoration: 'none' }}
-          >
-            Docs
-          </Link>
+          {process.env.SHOW_DOCS_LINK === '1' && (
+            <Link
+              href="/"
+              color={'woolball.400'}
+              _hover={{ color: 'woolball.300', textDecoration: 'none' }}
+            >
+              Docs
+            </Link>
+          )}
         </Stack>
         <Stack direction={'row'}>
           <SocialIcons spacing={{ base: 6, sm: 5 }} />
