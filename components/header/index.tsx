@@ -146,6 +146,7 @@ export default function Header() {
                 </Link>
               )}
             </HStack>
+
             <Spacer />
             <Flex justify="flex-end" w="full" maxW="824px">
               <HStack spacing="5" display={{ base: 'none', md: 'flex' }}>
