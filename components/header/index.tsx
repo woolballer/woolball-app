@@ -62,25 +62,29 @@ export default function Header() {
             color={'woolball.400'}
             _hover={{ color: 'woolball.300', textDecoration: 'none' }}
           >
-            <Heading>What&apos;s Woolball?</Heading>
+            <Heading fontSize={'md'} fontWeight={'semibold'}>
+              What&apos;s Woolball?
+            </Heading>
           </Link>
         </NextLink>
       </Button>
-      <Button
-        w="full"
-        bg={bgMobileNavBar}
-        _hover={{
-          bg: 'woolball.100',
-        }}
-      >
-        <Link
-          href="/"
-          color={'woolball.400'}
-          _hover={{ color: 'woolball.300', textDecoration: 'none' }}
+      {process.env.SHOW_DOCS_LINK === '1' && (
+        <Button
+          w="full"
+          bg={bgMobileNavBar}
+          _hover={{
+            bg: 'woolball.100',
+          }}
         >
-          Docs
-        </Link>
-      </Button>
+          <Link
+            href="/"
+            color={'woolball.400'}
+            _hover={{ color: 'woolball.300', textDecoration: 'none' }}
+          >
+            Docs
+          </Link>
+        </Button>
+      )}
       <Button
         w="full"
         bg={bgMobileNavBar}
@@ -132,14 +136,17 @@ export default function Header() {
                   What&apos;s Woolball?
                 </Link>
               </NextLink>
-              <Link
-                href="/"
-                color={'woolball.400'}
-                _hover={{ color: 'woolball.300', textDecoration: 'none' }}
-              >
-                Docs
-              </Link>
+              {process.env.SHOW_DOCS_LINK === '1' && (
+                <Link
+                  href="/"
+                  color={'woolball.400'}
+                  _hover={{ color: 'woolball.300', textDecoration: 'none' }}
+                >
+                  Docs
+                </Link>
+              )}
             </HStack>
+
             <Spacer />
             <Flex justify="flex-end" w="full" maxW="824px">
               <HStack spacing="5" display={{ base: 'none', md: 'flex' }}>
