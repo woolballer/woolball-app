@@ -21,7 +21,7 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import Logo from '../svgs/logo'
 import SocialIcons from '../social_icons'
 
-export default function Header() {
+export default function Navbar() {
   const mobileNav = useDisclosure()
 
   const text = useColorModeValue('dark', 'light')
