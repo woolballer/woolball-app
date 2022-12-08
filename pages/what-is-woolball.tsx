@@ -30,7 +30,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
         direction={'column'}
         alignItems="stretch"
         align="flex-start"
-        maxW="3xl"
+        maxW="4xl"
         spacing={{ base: 6, lg: 10 }}
       >
         <Heading
@@ -59,16 +59,16 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             justify={'center'}
             align={'start'}
             position={'relative'}
-            h={'700px'}
+            h={'10px'}
           >
             <Image
               align={'start'}
               maxWidth={'max-content'}
               position={'absolute'}
-              bottom={0}
-              left={0}
+              top={-400}
+              left={700}
               zIndex={-1}
-              src={'/images/what-is-woolball-bg.png'}
+              src={'/images/what-is-woolball-bg-2.png'}
               alt={'what is woolball logo'}
             />
           </Flex>
@@ -82,7 +82,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           fontSize={{ base: '14px', sm: '18px' }}
           lineHeight={{ base: '22px', sm: '28px' }}
         >
-          <Heading as="h2" size="xl">
+          <Heading as="h2" size={{ base: 'lg', md: 'xl' }}>
             <Text>1. Introducing Woolball: A New Naming System for Web3</Text>
           </Heading>
           <Text>
@@ -126,7 +126,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
 
           <p>Ready? Let’s go! Or as we say in Woolball, “let’s link!”.</p>
 
-          <Heading as="h2" size="xl">
+          <Heading as="h2" size={{ base: 'lg', md: 'xl' }}>
             2. Wait wait! What’s wrong with the subdomain system?
           </Heading>
           <p>
@@ -176,7 +176,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             your Web3 identity.
           </p>
 
-          <Heading as="h2" size="xl">
+          <Heading as="h2" size={{ base: 'lg', md: 'xl' }}>
             3. How Woolball Works: A System Overview
           </Heading>
           <p>
@@ -233,7 +233,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             big messy “ball of wool”, hence the name.
           </p>
 
-          <Heading as="h2" size="xl">
+          <Heading as="h2" size={{ base: 'lg', md: 'xl' }}>
             4. Names
           </Heading>
           <p>Woolball names are the basic object of the system.</p>
@@ -246,13 +246,15 @@ const WhatIsWoolballPage: NextPage = ({}) => {
 
           <p>The basic facts:</p>
           <UnorderedList ml={4}>
-            <ListItem>The ID of the name is the hash of the name.</ListItem>
-            <ListItem>
+            <ListItem ml={6}>
+              The ID of the name is the hash of the name.
+            </ListItem>
+            <ListItem ml={6}>
               Each name has an owner, a controller, and a resolver. The owner
               owns the name, the controllers operate it, and the resolver
               specifies its functionality. This is similar to ENS.
             </ListItem>
-            <ListItem>
+            <ListItem ml={6}>
               <p>
                 Names are registered for a finite amount of time (but can be
                 extended).
@@ -271,9 +273,11 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             it (ta-dam again!). This gives two interesting collections
             associated with each name:
           </p>
-          <OrderedList ml={4}>
-            <ListItem>A collection of all the links the name created.</ListItem>
-            <ListItem>
+          <OrderedList>
+            <ListItem ml={6}>
+              A collection of all the links the name created.
+            </ListItem>
+            <ListItem ml={6}>
               A collection of all the links pointing to this name.
             </ListItem>
           </OrderedList>
@@ -283,7 +287,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             now also links in the game. Let’s discuss that in a new subsection.
           </p>
 
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: 'md', md: 'lg' }}>
             4.1. Extension of names
           </Heading>
           <p>
@@ -317,13 +321,13 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             </p>
           </blockquote>
 
-          <Heading as="h2" size="xl">
+          <Heading as="h2" size={{ base: 'lg', md: 'xl' }}>
             5. Links
           </Heading>
           <p>Let’s get the boring bits out first. Like names, each link has</p>
           <UnorderedList ml={4}>
-            <ListItem>a controller,</ListItem>
-            <ListItem>a resolver.</ListItem>
+            <ListItem ml={6}>a controller,</ListItem>
+            <ListItem ml={6}>a resolver.</ListItem>
           </UnorderedList>
 
           <p>
@@ -331,9 +335,9 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             Instead, it has three new fields.
           </p>
           <UnorderedList ml={4}>
-            <ListItem>from,</ListItem>
-            <ListItem>to,</ListItem>
-            <ListItem>type.</ListItem>
+            <ListItem ml={6}>from,</ListItem>
+            <ListItem ml={6}>to,</ListItem>
+            <ListItem ml={6}>type.</ListItem>
           </UnorderedList>
 
           <p>
@@ -382,9 +386,11 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             So, similar to names, each link has two collections associated with
             it.
           </p>
-          <OrderedList ml={4}>
-            <ListItem>A collection of all the links the link created.</ListItem>
-            <ListItem>
+          <OrderedList>
+            <ListItem ml={6}>
+              A collection of all the links the link created.
+            </ListItem>
+            <ListItem ml={6}>
               A collection of all links pointing to this link.
             </ListItem>
           </OrderedList>
@@ -394,7 +400,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             (or link) as long as each got a different alias.
           </p>
 
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: 'md', md: 'lg' }}>
             5.1. <Code fontSize={'lg'}>ahmad#basia</Code>
           </Heading>
           <p>
@@ -412,7 +418,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
 
           <p>That’s not our fault, that’s how the URL standard is.</p>
 
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: 'md', md: 'lg' }}>
             5.2. Alias
           </Heading>
           <p>
@@ -462,7 +468,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             the link is <Code>ahmad#greatBasia</Code>.
           </p>
 
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: 'md', md: 'lg' }}>
             5.3. Types of links
           </Heading>
           <p>The type of the link determines who actually owns it.</p>
@@ -475,22 +481,22 @@ const WhatIsWoolballPage: NextPage = ({}) => {
 
           <p>The types are as follows.</p>
 
-          <OrderedList ml={4}>
-            <ListItem>
+          <OrderedList>
+            <ListItem ml={6}>
               <strong>Linker control</strong>. The link is not transferable,
               only the linker can extend or cancel it.
             </ListItem>
-            <ListItem>
+            <ListItem ml={6}>
               <strong>Linkee control</strong>. The link is transferable, where
               only the linkee can extend, cancel or transfer it.
             </ListItem>
-            <ListItem>
+            <ListItem ml={6}>
               <strong>Mixed control</strong>. Both the linker and the linkee can
               transfer, extend or cancel the link.
             </ListItem>
           </OrderedList>
 
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: 'md', md: 'lg' }}>
             5.4. resolver and inheritance
           </Heading>
           <p>
@@ -509,7 +515,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             having its own resolver.
           </p>
 
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: 'md', md: 'lg' }}>
             5.5. Woolball is an extension of subdomains name systems
           </Heading>
           <p>
@@ -541,7 +547,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             extension.
           </p>
 
-          <Heading as="h2" size="xl">
+          <Heading as="h2" size={{ base: 'lg', md: 'xl' }}>
             6. The Benefits of Using Woolball on the Decentralized Web
           </Heading>
           <p>
@@ -550,13 +556,13 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             important systems:
           </p>
 
-          <OrderedList ml={4}>
-            <ListItem>Web3 accounts.</ListItem>
-            <ListItem>A reputation system.</ListItem>
-            <ListItem>Structured DAOs.</ListItem>
+          <OrderedList>
+            <ListItem ml={6}>Web3 accounts.</ListItem>
+            <ListItem ml={6}>A reputation system.</ListItem>
+            <ListItem ml={6}>Structured DAOs.</ListItem>
           </OrderedList>
 
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: 'md', md: 'lg' }}>
             6.1. Web3 accounts
           </Heading>
           <p>
@@ -617,7 +623,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             use in web3.
           </p>
 
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: 'md', md: 'lg' }}>
             6.2. Reputation
           </Heading>
           <p>A link name system can generate a reputation score for names.</p>
@@ -643,7 +649,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             differently by different people
           </p>
 
-          <Heading as="h4" size="md">
+          <Heading as="h4" size={{ base: 'sm', md: 'md' }}>
             6.2.1. A simple reputation system
           </Heading>
           <p>
@@ -671,7 +677,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             a different article in order to keep the example simple.
           </p>
 
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: 'md', md: 'lg' }}>
             6.3. Structured DAOs
           </Heading>
           <p>
@@ -697,7 +703,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             Links are a simple way to give role X to the person with the name Y.
           </p>
 
-          <Heading as="h2" size="xl">
+          <Heading as="h2" size={{ base: 'lg', md: 'xl' }}>
             7. Integration with Other Name Systems
           </Heading>
           <p>
@@ -717,7 +723,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             other name system.
           </p>
 
-          <Heading as="h2" size="xl">
+          <Heading as="h2" size={{ base: 'lg', md: 'xl' }}>
             8. Summary
           </Heading>
           <p>
