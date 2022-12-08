@@ -58,9 +58,7 @@ export default function Home() {
             lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
             paddingRight={{ base: 0, md: 16 }}
           >
-            Woolball is a Name System where names can link to each other.
-            Woolball is an extension to the subdomain system, everything you can
-            do with subdomains, you can do with links.
+            Woolball is a new name system that makes it super easy to connect people, apps, and identities using links. With Woolball you can build stuff like:
           </Text>
           <SimpleGrid
             columns={{ base: 1, lg: 3 }}
@@ -71,9 +69,9 @@ export default function Home() {
             fontWeight={'400'}
             verticalAlign={'middle'}
           >
-            <UseCase>Structured DAOs</UseCase>
+            <UseCase>Reputation</UseCase>
             <UseCase>Web3 accounts</UseCase>
-            <UseCase>Reputation score for names</UseCase>
+            <UseCase>Social Dapps</UseCase>
           </SimpleGrid>
           <ActionButtons />
         </Stack>
@@ -98,8 +96,7 @@ export default function Home() {
             fontSize={{ base: '24px', md: '32px', lg: '40px' }}
             lineHeight={{ base: '32px', md: '40px', lg: '48px' }}
           >
-            We introduce Woolball, a flat name system that uses links between
-            names instead of subdomains.
+            We are currently building Woolball! Specs and code will follow soon, see our roadmap 👇
           </Text>
         </Flex>
         <Flex w={'100%'} align={'center'} flex={1} justify={'center'}>
@@ -115,7 +112,7 @@ export default function Home() {
               }}
             >
               <HStack>
-                <Text fontSize={'16px'}>read whole article about woolball</Text>
+                <Text fontSize={'16px'}>read a whole article about woolball</Text>
 
                 <ArrowIcon />
               </HStack>

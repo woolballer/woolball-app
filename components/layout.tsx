@@ -37,7 +37,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta property="og:title" content="Woolball a name system with links" />
         <meta
           property="og:description"
-          content="Woolball is a Name System where names can link to each other.  Woolball is an extension to the subdomain system, everything you can do with subdomains, you can do with links."
+          content="Woolball is a name system that let you save connections between names on the blockchain in the form of links. With Woolball links you can easily build social Daaps, add Web3 accounts to an existing Daaps, or implement a reputation system for names."
         />
         <meta
           property="og:image"
@@ -52,7 +52,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         />
         <meta
           property="twitter:description"
-          content="Woolball is a Name System where names can link to each other.  Woolball is an extension to the subdomain system, everything you can do with subdomains, you can do with links."
+          content="Woolball is a name system that let you save connections between names on the blockchain in the form of links. With Woolball links you can easily build social Daaps, add Web3 accounts to an existing Daaps, or implement a reputation system for names."
         />
         <meta
           property="twitter:image"

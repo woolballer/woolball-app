@@ -8,7 +8,7 @@ export default function ActionButtons() {
       w={'100%'}
       direction={'row'}
     >
-      {process.env.SHOW_PRESALE_BTN === '1' && (
+      {process.env.SHOW_PRESALE_BTN !== '1' && (
         <Button
           rounded={'full'}
           size={'lg'}
@@ -19,7 +19,7 @@ export default function ActionButtons() {
           px={{ base: 6, md: 16, sm: 8 }}
           shadow={'sm'}
         >
-          JOIN PRESALE
+          JOIN DISCORD
         </Button>
       )}
       <Button
@@ -34,7 +34,7 @@ export default function ActionButtons() {
         borderColor="woolball.300"
         shadow={'sm'}
       >
-        JOIN DISCORD
+        READ MORE
       </Button>
     </Flex>
   )
