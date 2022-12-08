@@ -1,19 +1,5 @@
 import Head from 'next/head'
-import {
-  Container,
-  Stack,
-  HStack,
-  Flex,
-  Heading,
-  Text,
-  Button,
-  Image,
-  chakra,
-  SimpleGrid,
-  useColorModeValue,
-  Link,
-  VStack,
-} from '@chakra-ui/react'
+import { Container, chakra } from '@chakra-ui/react'
 
 import localFont from '@next/font/local'
 import Header from './header'
