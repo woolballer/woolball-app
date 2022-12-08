@@ -58,7 +58,9 @@ export default function Home() {
             lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
             paddingRight={{ base: 0, md: 16 }}
           >
-            Woolball is a new name system that makes it super easy to connect people, apps, and identities using links. With Woolball you can build stuff like:
+            Woolball is a new name system that makes it super easy to connect
+            people, apps, and identities using links. With Woolball you can
+            build stuff like:
           </Text>
           <SimpleGrid
             columns={{ base: 1, lg: 3 }}
@@ -71,7 +73,7 @@ export default function Home() {
           >
             <UseCase>Reputation</UseCase>
             <UseCase>Web3 accounts</UseCase>
-            <UseCase>Social Dapps</UseCase>
+            <UseCase>Social dApps</UseCase>
           </SimpleGrid>
           <ActionButtons />
         </Stack>
@@ -96,7 +98,8 @@ export default function Home() {
             fontSize={{ base: '24px', md: '32px', lg: '40px' }}
             lineHeight={{ base: '32px', md: '40px', lg: '48px' }}
           >
-            We are currently building Woolball! Specs and code will follow soon, see our roadmap 👇
+            We are currently building Woolball! Specs and code will follow soon,
+            see our roadmap 👇
           </Text>
         </Flex>
         <Flex w={'100%'} align={'center'} flex={1} justify={'center'}>
@@ -112,7 +115,9 @@ export default function Home() {
               }}
             >
               <HStack>
-                <Text fontSize={'16px'}>read a whole article about woolball</Text>
+                <Text fontSize={'16px'}>
+                  read a whole article about woolball
+                </Text>
 
                 <ArrowIcon />
               </HStack>
