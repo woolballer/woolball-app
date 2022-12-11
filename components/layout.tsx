@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { Container, chakra } from '@chakra-ui/react'
 
 import localFont from '@next/font/local'

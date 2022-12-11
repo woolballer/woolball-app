@@ -12,7 +12,6 @@ import {
   ListItem,
   OrderedList,
 } from '@chakra-ui/react'
-import UseCase from '../components/landing_page/use_case'
 import { GetStaticProps, NextPage } from 'next'
 
 export const getStaticProps: GetStaticProps = async (_context) => {

@@ -9,13 +9,10 @@ import {
   Link,
   VStack,
   chakra,
-  useColorMode,
-  useColorModeValue,
   useDisclosure,
   Spacer,
   Heading,
 } from '@chakra-ui/react'
-import { FaMoon, FaSun } from 'react-icons/fa'
 import NextLink from 'next/link'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Logo from '../svgs/logo'
@@ -23,8 +20,6 @@ import SocialIcons from '../social_icons'
 
 export default function Navbar() {
   const mobileNav = useDisclosure()
-
-  const text = useColorModeValue('dark', 'light')
 
   const bg = 'white'
   const bgMobileNavBar = 'woolball.50'
@@ -122,7 +117,6 @@ export default function Navbar() {
             <Spacer />
             <HStack
               display={{ base: 'none', md: 'flex' }}
-              // ml={{ md: 8, lg: 0 }}
               fontWeight={'bold'}
               spacing={{ base: 3, lg: 8 }}
               w="full"

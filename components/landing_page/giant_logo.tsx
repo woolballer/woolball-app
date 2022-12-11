@@ -1,4 +1,4 @@
-import { Flex, Image, chakra, useColorModeValue } from '@chakra-ui/react'
+import { Flex, Image, useColorModeValue } from '@chakra-ui/react'
 
 export default function GiantLogo(props: any) {
   return (
@@ -19,14 +19,9 @@ export default function GiantLogo(props: any) {
       <Image
         alt={'Hash Logo'}
         position={'absolute'}
-        // align={'center'}
-        // w={'80%'}
-        // h={'105%'}
         align={'start'}
         w={'526px'}
         h={'700x'}
-        // ml={{ base: 0, md: '13%' }}
-        // ml={{ base: 0, md: '13%' }}
         src={'/images/giant-hash-sign.png'}
       />
     </Flex>
@@ -35,13 +30,7 @@ export default function GiantLogo(props: any) {
 
 export const HashBg = (props: any) => {
   return (
-    <Flex
-      width={'90%'}
-      paddingTop={'90%'}
-      // ml={{ base: 0, md: '13%' }}
-      position={'relative'}
-      {...props}
-    >
+    <Flex width={'90%'} paddingTop={'90%'} position={'relative'} {...props}>
       <Flex
         width={'90%'}
         position={'absolute'}

@@ -20,7 +20,6 @@ export default function Home() {
     <Layout>
       <Flex
         pt={{ base: 6, sm: 8, md: 16, lg: 24, xl: 28 }}
-        // pb={{ base: 16, sm: 12, md: 16, lg: 24, xl: 28 }}
         mb={{ base: 1 }}
         direction={{ base: 'column', md: 'row' }}
         alignItems="stretch"
@@ -29,7 +28,6 @@ export default function Home() {
         <Stack
           flex={0.5}
           spacing={{ base: 6, lg: 10 }}
-          // marginBottom={{ base: 20, md: 10 }}
           minH={{
             base: 'calc(100vh - 96px)',
             sm: 'calc(100vh - 104px)',

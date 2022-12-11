@@ -7,7 +7,6 @@ import {
   Link,
   HStack,
   Flex,
-  Heading,
 } from '@chakra-ui/react'
 import SocialIcons from '../components/social_icons'
 import NextLink from 'next/link'
