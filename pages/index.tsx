@@ -47,7 +47,7 @@ export default function Home() {
               as={'span'}
               position={'relative'}
             >
-              A name system with links
+              A Global Link System
             </Text>
           </Heading>
           <Text
@@ -56,9 +56,9 @@ export default function Home() {
             lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
             paddingRight={{ base: 0, md: 16 }}
           >
-            Woolball is a new name system that makes it super easy to connect
-            people, apps, and identities using links. With Woolball you can
-            build stuff like:
+            Woolball is global link systems that creates 
+            connections between people, dApps, DAOs and platforms in Web3. 
+            With Woolball you can easily build stuff like:
           </Text>
           <SimpleGrid
             columns={{ base: 1, lg: 3 }}

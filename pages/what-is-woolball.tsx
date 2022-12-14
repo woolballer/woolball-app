@@ -50,7 +50,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           fontSize={{ base: '16px', sm: '24px', md: '32px', lg: '40px' }}
           lineHeight={{ base: '24px', sm: '30px', md: '40px', lg: '48px' }}
         >
-          Woolball is a name system where names can link to one another, or as we call it, a "Linking System".
+          Woolball is a name system where names can link to one another, or as we call it, a &ldquo;Global Link System&rdquo;.
         </Text>
         <Show above={'lg'}>
           <Flex
@@ -81,7 +81,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           lineHeight={{ base: '22px', sm: '28px' }}
         >
           <p>
-            Woolball is a decentralized name system with links. 
+            Woolball is a global link system, meaning a decentralized name system with links. 
           </p>
 
           <p>
@@ -138,7 +138,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
 
             <p>Advanced applications of Woolball could include its use in DeFi apps. For example, a DeFi app could use Woolball to create loan links collaterized by yield farming links from a different app, opening app opportunities for complex DeFi apps.</p>
 
-            <p>Finally, Woolball could also be used as an easy-to-integrate web3 accounts system. In this case, each account on a platform would be represented as a link between the user's name and the platform's name. This would allow users to easily log in with their regular Woolball name, while still enabling the platform to track and manage their usage data.</p>
+            <p>Finally, Woolball could also be used as an easy-to-integrate web3 accounts system. In this case, each account on a platform would be represented as a link between the user&apos;s name and the platform&apos;s name. This would allow users to easily log in with their regular Woolball name, while still enabling the platform to track and manage their usage data.</p>
             
             <Heading as="h3" size={{ base: 'lg', md: 'xl' }}>
               Current State
