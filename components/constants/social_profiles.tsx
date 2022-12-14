@@ -13,7 +13,7 @@ export const DISCORD_LINK: string = 'https://discord.gg/evNn6NnA'
 export const SOCIAL_PROFILES: SocialProfileType[] = [
   {
     image: AiFillGithub,
-    link: 'https://github.com/WoolBall-names',
+    link: 'https://github.com/woolballers',
     label: 'Woolball Github',
   },
   {
