@@ -5,14 +5,13 @@ import {
   Stack,
   Text,
   Image,
-  SimpleGrid,
   Show,
-  Code,
   UnorderedList,
   ListItem,
-  OrderedList,
+  Link,
 } from '@chakra-ui/react'
 import { GetStaticProps, NextPage } from 'next'
+import { DISCORD_LINK } from '../components/constants/social_profiles'
 
 export const getStaticProps: GetStaticProps = async (_context) => {
   return {
@@ -192,7 +191,9 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             </ListItem>
           </UnorderedList>
 
-          <p>Join our Discord to be part of it!</p>
+          <p>
+            <Link href={DISCORD_LINK}>Join our Discord</Link> to be part of it!
+          </p>
         </Stack>
       </Stack>
     </Layout>
