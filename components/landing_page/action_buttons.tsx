@@ -1,4 +1,6 @@
 import { Flex, Button } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import { DISCORD_LINK } from '../constants/social_profiles'
 
 export default function ActionButtons() {
   return (
@@ -8,7 +10,7 @@ export default function ActionButtons() {
       w={'100%'}
       direction={'row'}
     >
-      {process.env.SHOW_PRESALE_BTN !== '1' && (
+      <NextLink href={DISCORD_LINK}>
         <Button
           rounded={'full'}
           size={'lg'}
@@ -21,21 +23,23 @@ export default function ActionButtons() {
         >
           JOIN DISCORD
         </Button>
-      )}
-      <Button
-        rounded={'full'}
-        size={'lg'}
-        bg={'woolball.50'}
-        color={'woolball.300'}
-        fontWeight={'bold'}
-        mx={{ base: 4, sm: 8 }}
-        px={{ base: 6, md: 16, sm: 8 }}
-        border="1px"
-        borderColor="woolball.300"
-        shadow={'sm'}
-      >
-        READ MORE
-      </Button>
+      </NextLink>
+      <NextLink href="/what-is-woolball">
+        <Button
+          rounded={'full'}
+          size={'lg'}
+          bg={'woolball.50'}
+          color={'woolball.300'}
+          fontWeight={'bold'}
+          mx={{ base: 4, sm: 8 }}
+          px={{ base: 6, md: 16, sm: 8 }}
+          border="1px"
+          borderColor="woolball.300"
+          shadow={'sm'}
+        >
+          READ MORE
+        </Button>
+      </NextLink>
     </Flex>
   )
 }
