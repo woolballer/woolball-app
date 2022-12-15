@@ -8,7 +8,7 @@ export interface SocialProfileType {
   label: string
 }
 
-export const DISCORD_LINK: string = 'https://discord.gg/evNn6NnA'
+export const DISCORD_LINK: string = 'https://discord.gg/SbekPPeCxj'
 
 export const SOCIAL_PROFILES: SocialProfileType[] = [
   {
