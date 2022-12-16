@@ -5,14 +5,13 @@ import {
   Stack,
   Text,
   Image,
-  SimpleGrid,
   Show,
-  Code,
   UnorderedList,
   ListItem,
-  OrderedList,
+  Link,
 } from '@chakra-ui/react'
 import { GetStaticProps, NextPage } from 'next'
+import { DISCORD_LINK } from '../components/constants/social_profiles'
 
 export const getStaticProps: GetStaticProps = async (_context) => {
   return {
@@ -126,13 +125,35 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           <Heading as="h3" size={{ base: 'lg', md: 'xl' }}>
             Use Cases
           </Heading>
-            <p>Woolball use cases are mostly based on ongoing interactions between entities within the Web3 ecosystem.</p>
+          <p>
+            Woolball use cases are mostly based on ongoing interactions between
+            entities within the Web3 ecosystem.
+          </p>
 
-            <p>One potential use case is the creation of a reputation system. With Woolball, entities can be assigned a reputation score based on the number and quality of links they have with other entities. This could be used to develop spam filters or social credit systems, allowing users to easily evaluate the trustworthiness of others within the system.</p>
+          <p>
+            One potential use case is the creation of a reputation system. With
+            Woolball, entities can be assigned a reputation score based on the
+            number and quality of links they have with other entities. This
+            could be used to develop spam filters or social credit systems,
+            allowing users to easily evaluate the trustworthiness of others
+            within the system.
+          </p>
 
-            <p>Another use case is the implementation of a Woolball-based chat system. In this scenario, links between names would represent ongoing conversations between the entities holding those names. Users could initiate conversations simply by creating a link to the person they want to talk to, making it easy to build chat functionality without writing any smart contract code.</p>
+          <p>
+            Another use case is the implementation of a Woolball-based chat
+            system. In this scenario, links between names would represent
+            ongoing conversations between the entities holding those names.
+            Users could initiate conversations simply by creating a link to the
+            person they want to talk to, making it easy to build chat
+            functionality without writing any smart contract code.
+          </p>
 
-            <p>Advanced applications of Woolball could include its use in DeFi apps. For example, a DeFi app could use Woolball to create loan links collaterized by yield farming links from a different app, opening app opportunities for complex DeFi apps.</p>
+          <p>
+            Advanced applications of Woolball could include its use in DeFi
+            apps. For example, a DeFi app could use Woolball to create loan
+            links collaterized by yield farming links from a different app,
+            opening app opportunities for complex DeFi apps.
+          </p>
 
             <p>Finally, Woolball could also be used as an easy-to-integrate web3 accounts system. In this case, each account on a platform would be represented as a link between the user&apos;s name and the platform&apos;s name. This would allow users to easily log in with their regular Woolball name, while still enabling the platform to track and manage their usage data.</p>
 
@@ -148,7 +169,22 @@ const WhatIsWoolballPage: NextPage = ({}) => {
               <li>Improving the theory of Woolball and make first usecases.</li>
             </ul>
 
-            <p>Join our Discord to be part of it!</p>
+          <p>Currently we are:</p>
+          <UnorderedList>
+            <ListItem ml={6}>
+              Writing specs, this includes a proposal for an ERC a yellow paper,
+            </ListItem>
+            <ListItem ml={6}>
+              Building a first implementation of Woolball in Solidity,
+            </ListItem>
+            <ListItem ml={6}>
+              Improving the theory of Woolball and make first usecases.
+            </ListItem>
+          </UnorderedList>
+
+          <p>
+            <Link href={DISCORD_LINK}>Join our Discord</Link> to be part of it!
+          </p>
         </Stack>
       </Stack>
     </Layout>
