@@ -69,9 +69,9 @@ export default function Home() {
             fontWeight={'400'}
             verticalAlign={'middle'}
           >
-            <UseCase>Reputation</UseCase>
-            <UseCase>Web3 accounts</UseCase>
-            <UseCase>Social dApps</UseCase>
+            <UseCase>Reputation systems</UseCase>
+            <UseCase>Web3 accounts systems</UseCase>
+            <UseCase>On-chain contract</UseCase>
           </SimpleGrid>
           <ActionButtons />
         </Stack>
@@ -97,7 +97,7 @@ export default function Home() {
             lineHeight={{ base: '32px', md: '40px', lg: '40px' }}
           >
             Woolball links are made between Woolball names.
-            A presale of Woolball names is coming soon to help us fund development!
+            A presale of Woolball names to fund development is coming soon.
           </Text>
         </Flex>
         <Flex w={'100%'} align={'center'} flex={1} justify={'center'}>

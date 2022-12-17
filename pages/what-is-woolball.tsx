@@ -140,12 +140,11 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           </p>
 
           <p>
-            Another use case is the implementation of a Woolball-based chat
-            system. In this scenario, links between names would represent
-            ongoing conversations between the entities holding those names.
-            Users could initiate conversations simply by creating a link to the
-            person they want to talk to, making it easy to build chat
-            functionality without writing any smart contract code.
+            Another use case is the implementation of a Woolball-based contract
+            between DAOs or projects. In this scenario, each link represent
+            a contractual agreement between two entities, and the link properties
+            and functions specify the content of the agreement and its enforcement
+            rules.
           </p>
 
           <p>
