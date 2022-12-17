@@ -168,19 +168,6 @@ const WhatIsWoolballPage: NextPage = ({}) => {
               <li>Improving the theory of Woolball and make first usecases.</li>
             </ul>
 
-          <p>Currently we are:</p>
-          <UnorderedList>
-            <ListItem ml={6}>
-              Writing specs, this includes a proposal for an ERC a yellow paper,
-            </ListItem>
-            <ListItem ml={6}>
-              Building a first implementation of Woolball in Solidity,
-            </ListItem>
-            <ListItem ml={6}>
-              Improving the theory of Woolball and make first usecases.
-            </ListItem>
-          </UnorderedList>
-
           <p>
             <Link href={DISCORD_LINK}>Join our Discord</Link> to be part of it!
           </p>
