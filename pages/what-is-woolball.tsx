@@ -49,8 +49,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           fontSize={{ base: '16px', sm: '24px', md: '32px', lg: '40px' }}
           lineHeight={{ base: '24px', sm: '30px', md: '40px', lg: '48px' }}
         >
-          Woolball is a name system where names can link to one another, or as
-          we call it, a &ldquo;Global Link System&rdquo;.
+          Woolball is a name system where names can link to one another. We call such a system, a &ldquo;Global Link System&rdquo;.
         </Text>
         <Show above={'lg'}>
           <Flex
@@ -81,30 +80,25 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           lineHeight={{ base: '22px', sm: '28px' }}
         >
           <p>
-            Woolball is a global link system, meaning a decentralized name
-            system with links.
-          </p>
-
-          <p>
-            In traditional name systems like DNS and ENS, names serve as unique
-            identifiers for websites or blockchain addresses. Woolball takes
-            this a step further by allowing names to be linked together,
-            creating a network of interconnected identities.
-          </p>
+            In traditional name systems like DNS and ENS, names serve as
+            unique identifiers for websites or blockchain addresses.
+            Woolball takes this a step further by allowing names to be linked together,
+            creating a network of interconnected identities.</p>
 
           <p>
             One of the key advantages of Woolball is its ability to create
-            social dependencies within the Web3 ecosystem. When two entities are
-            linked, they are essentially establishing a relationship with each
-            other. This allows for the development of new applications and use
-            cases that rely on evaluating the relationships and reputations of
-            entities within the system.
+            social dependencies within the Web3 ecosystem.
+            When two entities are linked, they are essentially establishing
+            a relationship with each other. This allows for the development
+            of new applications and use cases that rely on
+            evaluating the relationships and reputations of entities
+            within the system.
           </p>
 
           <p>
-            For example, a social dApp built on top of Woolball could use links
-            to evaluate the trustworthiness of strangers, or to filter out
-            potential scams or malicious actors.
+            For example, a social dApp built on top of Woolball could
+            use links to evaluate the trustworthiness of strangers,
+            or to filter out potential scams or malicious actors.
           </p>
 
           <p>
@@ -115,17 +109,17 @@ const WhatIsWoolballPage: NextPage = ({}) => {
 
           <p>
             For example, `alice#` would be the Woolball name for the entity
-            named Alice, and a link from Alice to Bob would be written as
-            `alice#bob`.
+             named Alice, and a link from Alice to Bob would be
+             written as `alice#bob`.
           </p>
 
           <p>
-            Overall, Woolball offers a unique approach for web3 IDs. By allowing
-            for the creation of links between names, it enables the development
-            of new applications and use cases that rely the relationships and
-            reputations of entities within the system. This opens up exciting
-            possibilities for the future of decentralized identity and
-            reputation management.
+            Overall, Woolball offers a unique approach for web3 IDs. By allowing for the creation of links between names,
+            it enables the development of new applications
+            and use cases that rely the relationships
+             and reputations of entities within the system.
+             This opens up exciting possibilities for the
+             future of decentralized identity and reputation management.
           </p>
 
           <Heading as="h3" size={{ base: 'lg', md: 'xl' }}>
@@ -146,12 +140,11 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           </p>
 
           <p>
-            Another use case is the implementation of a Woolball-based chat
-            system. In this scenario, links between names would represent
-            ongoing conversations between the entities holding those names.
-            Users could initiate conversations simply by creating a link to the
-            person they want to talk to, making it easy to build chat
-            functionality without writing any smart contract code.
+            Another use case is the implementation of a Woolball-based contract
+            between DAOs or projects. In this scenario, each link represent
+            a contractual agreement between two entities, and the link properties
+            and functions specify the content of the agreement and its enforcement
+            rules.
           </p>
 
           <p>
@@ -161,22 +154,19 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             opening app opportunities for complex DeFi apps.
           </p>
 
-          <p>
-            Finally, Woolball could also be used as an easy-to-integrate web3
-            accounts system. In this case, each account on a platform would be
-            represented as a link between the user&apos;s name and the
-            platform&apos;s name. This would allow users to easily log in with
-            their regular Woolball name, while still enabling the platform to
-            track and manage their usage data.
-          </p>
+            <p>Finally, Woolball could also be used as an easy-to-integrate web3 accounts system. In this case, each account on a platform would be represented as a link between the user&apos;s name and the platform&apos;s name. This would allow users to easily log in with their regular Woolball name, while still enabling the platform to track and manage their usage data.</p>
 
-          <Heading as="h3" size={{ base: 'lg', md: 'xl' }}>
-            Current State
-          </Heading>
-          <p>
-            Woolball is being built as we talk. We are a team of more than 10
-            people working on it hard.
-          </p>
+            <Heading as="h3" size={{ base: 'lg', md: 'xl' }}>
+              Current State
+            </Heading>
+            <p>Woolball is being built as we talk. We are a team of more than 10 people working on it hard.</p>
+
+            <p>Currently we are:</p>
+            <ul>
+              <li>Writing specs, this includes a proposal for an ERC a yellow paper,</li>
+              <li>Building a first implementation of Woolball in Solidity,</li>
+              <li>Improving the theory of Woolball and make first usecases.</li>
+            </ul>
 
           <p>Currently we are:</p>
           <UnorderedList>

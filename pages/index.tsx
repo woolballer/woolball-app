@@ -56,8 +56,8 @@ export default function Home() {
             lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
             paddingRight={{ base: 0, md: 16 }}
           >
-            Woolball is global link systems that creates 
-            connections between people, dApps, DAOs and platforms in Web3. 
+            Woolball is global link systems that creates
+            connections between people, dApps, DAOs and platforms in Web3.
             With Woolball you can easily build stuff like:
           </Text>
           <SimpleGrid
@@ -69,9 +69,9 @@ export default function Home() {
             fontWeight={'400'}
             verticalAlign={'middle'}
           >
-            <UseCase>Reputation</UseCase>
-            <UseCase>Web3 accounts</UseCase>
-            <UseCase>Social dApps</UseCase>
+            <UseCase>Reputation systems</UseCase>
+            <UseCase>Web3 accounts systems</UseCase>
+            <UseCase>On-chain contract</UseCase>
           </SimpleGrid>
           <ActionButtons />
         </Stack>
@@ -93,11 +93,11 @@ export default function Home() {
         <Flex>
           <Text
             color={'black'}
-            fontSize={{ base: '24px', md: '32px', lg: '40px' }}
-            lineHeight={{ base: '32px', md: '40px', lg: '48px' }}
+            fontSize={{ base: '24px', md: '32px', lg: '32px' }}
+            lineHeight={{ base: '32px', md: '40px', lg: '40px' }}
           >
-            We are currently building Woolball! Specs and code will follow soon,
-            see our roadmap 👇
+            Woolball links are made between Woolball names.
+            A presale of Woolball names to fund development is coming soon.
           </Text>
         </Flex>
         <Flex w={'100%'} align={'center'} flex={1} justify={'center'}>
