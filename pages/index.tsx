@@ -47,7 +47,7 @@ export default function Home() {
               as={'span'}
               position={'relative'}
             >
-              A Global Link System
+              The ID system with links
             </Text>
           </Heading>
           <Text
@@ -56,12 +56,12 @@ export default function Home() {
             lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
             paddingRight={{ base: 0, md: 16 }}
           >
-            Woolball is global link systems that creates
-            connections between people, dApps, DAOs and platforms in Web3.
-            With Woolball you can easily build stuff like:
+            Woolball is the ID system that uses links to create on-chain connections 
+            between people, dApps, DAOs and platforms in Web3. With Woolball 
+            you can build stuff like:
           </Text>
           <SimpleGrid
-            columns={{ base: 1, lg: 3 }}
+            columns={{ base: 1, lg: 2 }}
             spacing={{ base: 2, lg: 8 }}
             color={'black'}
             fontSize={{ base: '16px', sm: '18px', lg: '22px' }}
@@ -71,7 +71,10 @@ export default function Home() {
           >
             <UseCase>Reputation systems</UseCase>
             <UseCase>Web3 accounts systems</UseCase>
-            <UseCase>On-chain contract</UseCase>
+            <UseCase>On-chain agreements</UseCase>
+            <UseCase>Social dApps</UseCase>
+            <UseCase>Spam Filters</UseCase>
+            <UseCase>Structured DAOs</UseCase>
           </SimpleGrid>
           <ActionButtons />
         </Stack>

@@ -30,11 +30,9 @@ export default function UseCase({
   const stackDirection: any =
     variant === 'other' ? { base: 'row' } : { base: 'row', lg: 'column' }
   return (
-    <Stack direction={stackDirection}>
-      <CheckmarkIcon variant={variant} />
       <Flex flexDirection={'row'} alignItems={'center'}>
+        <span style={{color:'orange', fontWeight: 'bold'}}>#&nbsp;</span>
         <Text>{children}</Text>
       </Flex>
-    </Stack>
   )
 }
