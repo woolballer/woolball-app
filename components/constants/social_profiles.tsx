@@ -1,5 +1,5 @@
 import { AiFillGithub } from 'react-icons/ai'
-import { FaDiscord } from 'react-icons/fa'
+import { FaDiscord, FaTwitter } from 'react-icons/fa'
 import { IconType } from 'react-icons/lib'
 
 export interface SocialProfileType {
@@ -20,5 +20,10 @@ export const SOCIAL_PROFILES: SocialProfileType[] = [
     image: FaDiscord,
     link: DISCORD_LINK,
     label: 'Woolball Discord',
+  },
+  {
+    image: FaTwitter,
+    link: 'https://twitter.com/woolballProject',
+    label: 'Woolball Twitter',
   },
 ]
