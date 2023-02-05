@@ -24,7 +24,7 @@ export default function ActionButtons() {
           JOIN DISCORD
         </Button>
       </NextLink>
-      <NextLink href="/what-is-woolball">
+      {/* <NextLink href="/what-is-woolball">
         <Button
           rounded={'full'}
           size={'lg'}
@@ -39,7 +39,7 @@ export default function ActionButtons() {
         >
           READ MORE
         </Button>
-      </NextLink>
+      </NextLink> */}
     </Flex>
   )
 }
