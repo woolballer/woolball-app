@@ -27,13 +27,13 @@ export default function UseCase({
   children: React.ReactNode
   variant?: 'homepage' | 'other'
 }) {
-  const stackDirection: any =
-    variant === 'other' ? { base: 'row' } : { base: 'row', lg: 'column' }
   return (
-    <Stack direction={stackDirection}>
-      <CheckmarkIcon variant={variant} />
+    <Stack direction={'row'}>
+      <Text fontWeight={'bold'} color={'orange.400'}>
+        #
+      </Text>
       <Flex flexDirection={'row'} alignItems={'center'}>
-        <Text>{children}</Text>
+        <Text fontWeight={'bold'}>{children}</Text>
       </Flex>
     </Stack>
   )

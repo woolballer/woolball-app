@@ -6,6 +6,7 @@ import {
   Text,
   SimpleGrid,
   Link,
+  VStack,
 } from '@chakra-ui/react'
 import GiantLogo from '../components/landing_page/giant_logo'
 import Roadmap from '../components/landing_page/road_map'
@@ -47,22 +48,33 @@ export default function Home() {
               as={'span'}
               position={'relative'}
             >
-              A Global Link System
+              The ID System with Links
             </Text>
           </Heading>
-          <Text
-            color={'black'}
-            fontSize={{ base: '16px', md: '18px', lg: '22px' }}
-            lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
-            paddingRight={{ base: 0, md: 16 }}
-          >
-            Woolball is global link systems that creates
-            connections between people, dApps, DAOs and platforms in Web3.
-            With Woolball you can easily build stuff like:
-          </Text>
+          <VStack spacing={{ base: 6, lg: 10 }} align={'left'}>
+            <Text
+              color={'black'}
+              fontSize={{ base: '16px', md: '18px', lg: '22px' }}
+              lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
+              paddingRight={{ base: 0, md: 16 }}
+            >
+              Woolball is the ID system that uses links to create on-chain
+              connections between people, dApps, DAOs and platforms in Web3.{' '}
+            </Text>
+
+            <Text
+              color={'black'}
+              fontSize={{ base: '16px', md: '18px', lg: '22px' }}
+              lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
+              paddingRight={{ base: 0, md: 16 }}
+            >
+              What can you build with Woolball?
+            </Text>
+          </VStack>
+
           <SimpleGrid
-            columns={{ base: 1, lg: 3 }}
-            spacing={{ base: 2, lg: 8 }}
+            columns={{ base: 1, lg: 2 }}
+            spacing={{ base: 2, lg: 5 }}
             color={'black'}
             fontSize={{ base: '16px', sm: '18px', lg: '22px' }}
             lineHeight={{ base: '24px', sm: '26px', lg: '32px' }}
@@ -71,7 +83,10 @@ export default function Home() {
           >
             <UseCase>Reputation systems</UseCase>
             <UseCase>Web3 accounts systems</UseCase>
-            <UseCase>On-chain contract</UseCase>
+            <UseCase>On-chain agreements</UseCase>
+            <UseCase>Social dApps</UseCase>
+            <UseCase>Spam Filters</UseCase>
+            <UseCase>Structured DAOs</UseCase>
           </SimpleGrid>
           <ActionButtons />
         </Stack>
@@ -96,8 +111,8 @@ export default function Home() {
             fontSize={{ base: '24px', md: '32px', lg: '32px' }}
             lineHeight={{ base: '32px', md: '40px', lg: '40px' }}
           >
-            Woolball links are made between Woolball names.
-            A presale of Woolball names to fund development is coming soon.
+            Woolball links are made between Woolball names. A presale of
+            Woolball names to fund development is coming soon.
           </Text>
         </Flex>
         <Flex w={'100%'} align={'center'} flex={1} justify={'center'}>
