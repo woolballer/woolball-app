@@ -49,7 +49,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           fontSize={{ base: '16px', sm: '24px', md: '32px', lg: '40px' }}
           lineHeight={{ base: '24px', sm: '30px', md: '40px', lg: '48px' }}
         >
-          Woolball is an ID system with links. Wollball is onchain, on Ethereum
+          Woolball is an ID system with links. Wollball is on-chain, on Ethereum
           Mainnet and Optimism. Links are tokens, holding the data on the
           relations between the IDs.
         </Text>
@@ -112,7 +112,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
               `alice#bob`.
             </p>
             <p>
-              Overall, Woolball offers a unique approach for web3 IDs. By
+              Overall, Woolball offers a unique approach for Web3 IDs. By
               allowing for the creation of links between IDs, it enables the
               development of new applications and use cases that rely the
               relationships and reputations of entities within the system. This
@@ -152,7 +152,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
               </p>
               <p>
                 Finally, Woolball could also be used as an easy-to-integrate
-                web3 accounts system. In this case, each account on a platform
+                Web3 accounts system. In this case, each account on a platform
                 would be represented as a link between the user&apos;s ID and
                 the platform&apos;s ID. This would allow users to easily log in
                 with their regular Woolball ID, while still enabling the

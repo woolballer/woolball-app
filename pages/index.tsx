@@ -11,10 +11,8 @@ import {
 import GiantLogo from '../components/landing_page/giant_logo'
 import Roadmap from '../components/landing_page/road_map'
 import ActionButtons from '../components/landing_page/action_buttons'
-import ArrowIcon from '../components/svgs/arrow'
 import UseCase from '../components/landing_page/use_case'
 import Layout from '../components/layout'
-import NextLink from 'next/link'
 
 export default function Home() {
   return (
