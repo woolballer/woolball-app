@@ -32,7 +32,9 @@ export default function UseCase({
   return (
       <Flex flexDirection={'row'} alignItems={'center'}>
         <span style={{color:'orange', fontWeight: 'bold'}}>#&nbsp;</span>
-        <Text>{children}</Text>
+        <span style={{fontWeight: 'bold'}}>
+          <Text>{children}</Text>
+        </span>
       </Flex>
   )
 }

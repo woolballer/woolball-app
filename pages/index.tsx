@@ -1,6 +1,7 @@
 import {
   Stack,
   HStack,
+  VStack,
   Flex,
   Heading,
   Text,
@@ -47,7 +48,7 @@ export default function Home() {
               as={'span'}
               position={'relative'}
             >
-              The ID system with links
+              The ID System with Links
             </Text>
           </Heading>
           <Text
@@ -56,9 +57,10 @@ export default function Home() {
             lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
             paddingRight={{ base: 0, md: 16 }}
           >
-            Woolball is the ID system that uses links to create on-chain connections 
-            between people, dApps, DAOs and platforms in Web3. With Woolball 
-            you can build stuff like:
+            <VStack spacing={{ base: 6, lg: 10 }} align={'left'}><div>Woolball is the ID system that uses links to create on-chain connections 
+            between people, dApps, DAOs and platforms in Web3. </div>
+
+            <div>What can you build with Woolball?</div></VStack>
           </Text>
           <SimpleGrid
             columns={{ base: 1, lg: 2 }}
@@ -99,12 +101,11 @@ export default function Home() {
             fontSize={{ base: '24px', md: '32px', lg: '32px' }}
             lineHeight={{ base: '32px', md: '40px', lg: '40px' }}
           >
-            Woolball links are made between Woolball names.
-            A presale of Woolball names to fund development is coming soon.
-          </Text>
-        </Flex>
-        <Flex w={'100%'} align={'center'} flex={1} justify={'center'}>
-          <NextLink href="/what-is-woolball" legacyBehavior passHref>
+            <p>Who is Woolball for?</p>
+
+            <p>Woolball is for develpers. With Woolball you can easily adding Web3 accounts, SBT tokens and Social connections to yours project.</p>
+
+            <NextLink href="/what-is-woolball" legacyBehavior passHref>
             <Link
               aria-label="Woolball Twitter"
               p="1"
@@ -115,16 +116,12 @@ export default function Home() {
                 bg: 'woolball.50',
               }}
             >
-              <HStack>
-                <Text fontSize={'16px'}>
-                  read a whole article about woolball
-                </Text>
-
-                <ArrowIcon />
-              </HStack>
+              Read the article that introduced Woolball.  
             </Link>
           </NextLink>
+          </Text>
         </Flex>
+      
       </SimpleGrid>
       <Roadmap />
     </Layout>
