@@ -33,7 +33,7 @@ export default function UseCase({
         #
       </Text>
       <Flex flexDirection={'row'} alignItems={'center'}>
-        <Text fontWeight={'bold'}>{children}</Text>
+        <Text fontWeight={'semibold'}>{children}</Text>
       </Flex>
     </Stack>
   )
