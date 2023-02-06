@@ -49,7 +49,9 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           fontSize={{ base: '16px', sm: '24px', md: '32px', lg: '40px' }}
           lineHeight={{ base: '24px', sm: '30px', md: '40px', lg: '48px' }}
         >
-          Woolball is a name system where names can link to one another. We call such a system, a &ldquo;Global Link System&rdquo;.
+          Woolball is an ID system with links. 
+          Wollball is onchain, on Ethereum Mainnet and Optimism. 
+          Links are tokens, holding the data on the relations between the IDs.
         </Text>
         <Show above={'lg'}>
           <Flex
@@ -81,7 +83,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
         >
           <p>
             In traditional name systems like DNS and ENS, names serve as
-            unique identifiers for websites or blockchain addresses.
+            unique IDs for websites or blockchain addresses.
             Woolball takes this a step further by allowing names to be linked together,
             creating a network of interconnected identities.</p>
 
@@ -104,17 +106,18 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           <p>
             Unlike traditional name systems, which use hierarchical subdomains
             to organize names, Woolball uses a cyclic, flat structure where
-            names are linked together with a hash symbol.
+            names (IDs) are linked together with a hash symbol.
           </p>
 
           <p>
-            For example, `alice#` would be the Woolball name for the entity
+            For example, `alice#` would be the Woolball ID for the entity
              named Alice, and a link from Alice to Bob would be
              written as `alice#bob`.
           </p>
 
           <p>
-            Overall, Woolball offers a unique approach for web3 IDs. By allowing for the creation of links between names,
+            Overall, Woolball offers a unique approach for web3 IDs. 
+            By allowing for the creation of links between IDs,
             it enables the development of new applications
             and use cases that rely the relationships
              and reputations of entities within the system.
@@ -154,12 +157,17 @@ const WhatIsWoolballPage: NextPage = ({}) => {
             opening app opportunities for complex DeFi apps.
           </p>
 
-            <p>Finally, Woolball could also be used as an easy-to-integrate web3 accounts system. In this case, each account on a platform would be represented as a link between the user&apos;s name and the platform&apos;s name. This would allow users to easily log in with their regular Woolball name, while still enabling the platform to track and manage their usage data.</p>
+            <p>
+             Finally, Woolball could also be used as an easy-to-integrate web3 accounts system. 
+             In this case, each account on a platform would be represented as a link between 
+             the user&apos;s ID and the platform&apos;s ID. 
+             This would allow users to easily log in with their regular Woolball ID, 
+             while still enabling the platform to track and manage their usage data.</p>
 
             <Heading as="h3" size={{ base: 'lg', md: 'xl' }}>
               Current State
             </Heading>
-            <p>Woolball is being built as we talk. We are a team of more than 10 people working on it hard.</p>
+            <p>Woolball is being built as we talk. We are a team of around 10 people working on it hard.</p>
 
             <p>Currently we are:</p>
             <ul>
