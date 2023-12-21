@@ -7,7 +7,15 @@ import {
   SimpleGrid,
   Link,
   VStack,
+  Input,
 } from '@chakra-ui/react'
+import {
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+} from '@chakra-ui/react'
+import { useState } from "react";
 import GiantLogo from '../components/landing_page/giant_logo'
 import Roadmap from '../components/landing_page/road_map'
 import ActionButtons from '../components/landing_page/action_buttons'
@@ -17,6 +25,8 @@ import Layout from '../components/layout'
 import NextLink from 'next/link'
 
 export default function Home() {
+  const [name, setName] = useState('');
+
   return (
     <Layout>
       <Flex
@@ -34,9 +44,17 @@ export default function Home() {
             sm: 'calc(100vh - 104px)',
             md: 'calc(100vh - 142px)',
             lg: 'calc(100vh - 168px)',
-            xl: 'calc(100vh - 184px)',
+            xl: 'calc(100vh - 194px)',
           }}
         >
+
+          <Alert status='info'>
+            <AlertIcon />
+              This early Woolball version was shipped to enable 
+              using Citadef. It's incomplete, dirty and lives on 
+              Optimism Goerli Testnet.
+          </Alert>
+
           <Heading
             lineHeight={1.1}
             fontWeight={700}
@@ -48,7 +66,7 @@ export default function Home() {
               as={'span'}
               position={'relative'}
             >
-              The ID System with Links
+              A social name system
             </Text>
           </Heading>
           <VStack spacing={{ base: 6, lg: 10 }} align={'left'}>
@@ -58,38 +76,15 @@ export default function Home() {
               lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
               paddingRight={{ base: 0, md: 16 }}
             >
-              Woolball is the ID system that uses links to create on-chain
-              connections between people, dApps, DAOs and platforms in Web3.{' '}
+              Woolball IDs gets their power from what other IDs say about them{' '}
             </Text>
             <VStack spacing={{ base: 4, lg: 4 }} align={'left'}>
-              <Text
-                color={'black'}
-                fontSize={{ base: '16px', md: '18px', lg: '22px' }}
-                lineHeight={{ base: '24px', md: '26px', lg: '32px' }}
-                paddingRight={{ base: 0, md: 16 }}
-              >
-                What can you build with Woolball?
-              </Text>
-              <SimpleGrid
-                columns={{ base: 1, lg: 2 }}
-                spacing={{ base: 2, lg: 5 }}
-                color={'black'}
-                fontSize={{ base: '16px', sm: '18px', lg: '22px' }}
-                lineHeight={{ base: '24px', sm: '26px', lg: '32px' }}
-                fontWeight={'400'}
-                verticalAlign={'middle'}
-              >
-                <UseCase>Reputation systems</UseCase>
-                <UseCase>Web3 accounts systems</UseCase>
-                <UseCase>On-chain agreements</UseCase>
-                <UseCase>Social dApps</UseCase>
-                <UseCase>Spam Filters</UseCase>
-                <UseCase>Structured DAOs</UseCase>
-              </SimpleGrid>
+              <Input placeholder='Choose your ID' value={name} onInput={e => setName(e.target.value)}/>
+              <ActionButtons name={name} />
+              
             </VStack>
           </VStack>
 
-          <ActionButtons />
         </Stack>
         <GiantLogo
           minH={{
@@ -97,37 +92,10 @@ export default function Home() {
             sm: 'calc(100vh - 104px)',
             md: 'calc(100vh - 142px)',
             lg: 'calc(100vh - 168px)',
-            xl: 'calc(100vh - 184px)',
+            xl: 'calc(100vh - 194px)',
           }}
         />
       </Flex>
-      <SimpleGrid
-        columns={1}
-        spacing={20}
-        mt={{ base: 2, md: 20 }}
-        mb={{ base: 2, md: 24 }}
-        color={'black'}
-      >
-        <VStack
-          paddingTop="40px"
-          spacing="5"
-          alignItems="flex-start"
-          fontSize={{ base: '24px', md: '32px', lg: '32px' }}
-          lineHeight={{ base: '32px', md: '40px', lg: '40px' }}
-        >
-          <Text fontWeight={'semibold'}>Who is Woolball for?</Text>
-          <Text
-            as="p"
-            fontSize={{ base: '24px', md: '32px', lg: '32px' }}
-            lineHeight={{ base: '32px', md: '40px', lg: '40px' }}
-          >
-            Woolball is built for developers. With Woolball you can easily
-            integrate Web3 accounts, SBT tokens, and social connections to your
-            project.
-          </Text>
-        </VStack>
-      </SimpleGrid>
-      <Roadmap />
     </Layout>
   )
 }

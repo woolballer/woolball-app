@@ -17,6 +17,7 @@ import NextLink from 'next/link'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Logo from '../svgs/logo'
 import SocialIcons from '../social_icons'
+import ConnectWalletBtn from './connect_wallet_btn';
 
 export default function Navbar() {
   const mobileNav = useDisclosure()
@@ -144,6 +145,7 @@ export default function Navbar() {
             <Spacer />
             <Flex justify="flex-end" w="full" maxW="824px">
               <HStack spacing="5" display={{ base: 'none', md: 'flex' }}>
+                <ConnectWalletBtn/>
                 <SocialIcons spacing={5} />
               </HStack>
 

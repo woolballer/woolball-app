@@ -62,12 +62,6 @@ export default function Footer() {
             <Stack>
               <LogoReverse width="184px" height="31px" />
             </Stack>
-
-            <Flex h={'full'} align={'end'} justify={'end'}>
-              <Text fontSize={'12px'} color={'black'}>
-                ©2022
-              </Text>
-            </Flex>
           </HStack>
         </Flex>
       </Container>

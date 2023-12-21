@@ -14,7 +14,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <main className={AspektaFont.className}>
         <Navbar />
         <Container maxW={'7xl'}>{children}</Container>
-        <Footer />
       </main>
     </chakra.div>
   )

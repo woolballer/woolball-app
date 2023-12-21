@@ -8,22 +8,12 @@ export interface SocialProfileType {
   label: string
 }
 
-export const DISCORD_LINK: string = 'https://discord.gg/SbekPPeCxj'
+export const GITHUB_LINK: string = 'https://github.com/woolballers'
 
 export const SOCIAL_PROFILES: SocialProfileType[] = [
   {
     image: AiFillGithub,
     link: 'https://github.com/woolballers',
     label: 'Woolball Github',
-  },
-  {
-    image: FaDiscord,
-    link: DISCORD_LINK,
-    label: 'Woolball Discord',
-  },
-  {
-    image: FaTwitter,
-    link: 'https://twitter.com/woolballProject',
-    label: 'Woolball Twitter',
   },
 ]
