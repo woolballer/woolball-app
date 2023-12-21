@@ -6,9 +6,9 @@ import {
   Text,
   Image,
   Show,
+  Link,
   UnorderedList,
   ListItem,
-  Link,
 } from '@chakra-ui/react'
 import { GetStaticProps, NextPage } from 'next'
 import { GITHUB_LINK } from '../components/constants/social_profiles'
@@ -77,7 +77,7 @@ const WhatIsWoolballPage: NextPage = ({}) => {
           alignItems="stretch"
           align="flex-start"
           maxW="3xl"
-          spacing={{ base: 4, lg: 6 }}
+          spacing={{ base: 8, lg: 10 }}
           fontSize={{ base: '14px', sm: '18px' }}
           lineHeight={{ base: '22px', sm: '28px' }}
         >
